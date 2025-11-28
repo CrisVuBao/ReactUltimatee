@@ -1,0 +1,50 @@
+.todo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.todo-title {
+  font-size: 28px;
+  padding-top: 20px;
+  color: #1570ef;
+  font-weight: bold;
+}
+
+.todo-add-new {
+  margin: 20px;
+}
+
+.todo-data {
+  padding: 20px 100px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.logo {
+  height: 6rem;
+  padding: 1.5rem;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2rem #646cffaa);
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .logo {
+    animation: spin infinite 20s linear;
+  }
+}
