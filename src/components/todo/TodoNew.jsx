@@ -1,8 +1,10 @@
-const TodoNew = () => {
+const TodoNew = (props) => {
+  const { addHandle } = props;
+
   return (
     <div className="todo-add-new">
       <input type="text" />
-      <button>Add</button>
+      <button onClick={addHandle}>Add</button>
     </div>
   );
 };

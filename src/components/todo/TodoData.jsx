@@ -1,12 +1,12 @@
 const TodoData = (props) => {
   // Props là một biến object {}
   console.log("check:", props);
-  const { nameNe, age, data } = props;
+  const { name, age, data } = props;
 
   return (
     <div className="todo-data">
       <div>
-        Learning React name: {nameNe}, {age}, {data.address}
+        Learning React name: {name}, {age}, {data.address}
       </div>
       <div>play game</div>
     </div>

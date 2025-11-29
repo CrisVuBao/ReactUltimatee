@@ -11,11 +11,15 @@ const App = () => {
     country: "Vietnam",
   };
 
+  const handleButton = () => {
+    alert("hiện nè");
+  };
+
   return (
     <div className="todo-container">
       <div className="todo-title">Todo list</div>
-      <TodoNew />
-      <TodoData nameNe={nameVip} age={age} data={data} />
+      <TodoNew addHandle={handleButton} />
+      <TodoData name={nameVip} age={age} data={data} />
       <div className="todo-image">
         <img src={reactLogo} className="logo" alt="" />
       </div>
