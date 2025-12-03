@@ -11,18 +11,14 @@ const App = () => {
     country: "Vietnam",
   };
 
-  const handleButton = () => {
-    alert("hiện nè");
-  };
-
-  const handleInput = (event) => {
-    console.log(event.target.value);
+  const handleButton = (name) => {
+    console.log(name);
   };
 
   return (
     <div className="todo-container">
       <div className="todo-title">Todo list</div>
-      <TodoNew addHandle={handleButton} handleInput={handleInput} />
+      <TodoNew addHandle={handleButton} />
       <TodoData name={nameVip} age={age} data={data} />
       <div className="todo-image">
         <img src={reactLogo} className="logo" alt="" />
