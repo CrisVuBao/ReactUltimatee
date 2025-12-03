@@ -15,10 +15,14 @@ const App = () => {
     alert("hiện nè");
   };
 
+  const handleInput = (event) => {
+    console.log(event.target.value);
+  };
+
   return (
     <div className="todo-container">
       <div className="todo-title">Todo list</div>
-      <TodoNew addHandle={handleButton} />
+      <TodoNew addHandle={handleButton} handleInput={handleInput} />
       <TodoData name={nameVip} age={age} data={data} />
       <div className="todo-image">
         <img src={reactLogo} className="logo" alt="" />
